@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+<com.google.android.material.tabs.TabLayout
+    android:id="@+id/tabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:tabMode="scrollable"
+    app:tabGravity="fill"
+    >
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/tabItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tab1"
+        />
+
+</com.google.android.material.tabs.TabLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <EditText
+        android:id="@+id/addrText"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:backgroundTintMode="add"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mySearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#444444"
+        android:text="Go!"
+
+         />
+
+    <Button
+        android:id="@+id/newTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#444444"
+        android:text="New Tab" />
+
+</LinearLayout>
+<androidx.viewpager2.widget.ViewPager2
+    android:id="@+id/myViewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+
+</LinearLayout>
